@@ -7,11 +7,12 @@
     <meta name="keywords" content="sites, web">
     <meta name="author" content="Nycole Certório">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/logoJS.jpg">
-    <title>DESAFIO 01 - JAVASCRIPT</title>
+    <title>DESAFIO 02 - JAVASCRIPT</title>
 </head>
 <body>
     <h1><mark>DESAFIO</mark></h1>
     <hr>
+    <h2></h2>
     <script>
         window.alert("REALIZANDO CONTAS");
         let num1 = parseInt(window.prompt("ESCOLHA O 1° NÚMERO"));
@@ -26,7 +27,7 @@
         }else{
             resul = num1 - num2
         }
-        document.getElementsByTagName(<h2>("O resultado da sua conta é: "+resul)</h2>);
+        document.getElementsByTagName('h2')[0].innerText= num1, num2, oprd, resul;
     </script>
 </body>
 </html>
