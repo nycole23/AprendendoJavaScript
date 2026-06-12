@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Nycole Certório">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logoJS.jpg">
+    <title>INTRODUÇÃO AO JAVASCRIPT</title>
+</head>
+<body>
+    <h1><mark>MANIPULANDO ELEMENTOS (TAGS)</mark> DO HTML ATRAVÉS DO JS</h1>
+    <hr>
+    <div>
+        <img src="../img/Barbie.jpg" alt="Barbie">
+        <button onclick="trocar_imagem()">Trocar Imagem</button>
+    </div>
+    <script>
+        function trocar_imagem(){
+            const tags_i = document.getElementsByTagName('img')
+            console.log(tags_i);
+            let tag_i_1 = tags_i[0]
+        
+            tag_i_1.src="../img/download (3).jpg"
+        }
+       
+       
+
+    </script>
+</body>
+</html>
