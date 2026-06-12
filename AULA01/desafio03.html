@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Nycole Certório">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/logoJS.jpg">
+    <title>DESAFIO 03 - JAVASCRIPT</title>
+</head>
+<body>
+    <h1><mark>DESAFIO</mark></h1>
+    <hr>
+    <p></p>
+    <script>
+        window.alert("REALIZANDO CONTAS");
+        let num1 = parseInt(window.prompt("ESCOLHA O 1° NÚMERO"));
+    
+        let num2 = parseInt(window.prompt("ESCOLHA O 2° NÚMERO"));
+        
+        let resul = 0
+
+        let oprd = window.prompt("ESCOLHA O OPERADOR (+) , (-) , (*) OU (/)");
+        if (oprd == "+"){
+            resul = num1 + num2
+        }else if (oprd == "-"){
+            resul = num1 - num2
+        }else if (oprd == "*"){
+            resul = num1 * num2
+        }else{
+            if(num2 == 0){
+                resul = "Não foi possível realizar a conta!"
+            }
+        }
+        document.getElementsByTagName('p')[0].innerText= num1 + " " +oprd+ " " + num2 + ' = ' +resul
+    </script>
+</body>
+</html>
